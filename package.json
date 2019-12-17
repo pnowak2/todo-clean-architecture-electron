@@ -1,0 +1,29 @@
+{
+  "name": "@domisoft/todo-clean-architecture-electron",
+  "version": "1.0.0",
+  "description": "Clean Architecture Concepts Applied",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "start": "npm run build && electron ./dist/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pnowak2/todo-clean-architecture-electron.git"
+  },
+  "author": "Piotr Nowak",
+  "license": "ISC",
+  "keywords": [
+    "Clean",
+    "Architecture"
+  ],
+  "dependencies": {
+    "@domisoft/todo-clean-architecture": "^1.0.0"
+  },
+  "devDependencies": {
+    "electron": "^6.0.8",
+    "tslint": "^5.19.0",
+    "typescript": "^3.6.0"
+  }
+}
