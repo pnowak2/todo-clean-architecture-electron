@@ -1,0 +1,23 @@
+<footer class="footer">
+  <span class="todo-count">
+    <strong>{{ leftCount }}</strong> item(s) left
+  </span>
+
+  <ul class="filters">
+    <li>
+      <a href="#/" class="selected" (click)="onShowAll()">All</a>
+    </li>
+    <li>
+      <a href="#/active" (click)="onShowActive()">Active</a>
+    </li>
+    <li>
+      <a href="#/completed" (click)="onShowCompleted()">Completed</a>
+    </li>
+  </ul>
+
+  <button 
+    class="clear-completed" 
+    (click)="onClearCompleted()">
+    Clear completed
+  </button>
+</footer>
